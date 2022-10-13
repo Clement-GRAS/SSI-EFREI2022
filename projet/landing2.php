@@ -63,9 +63,9 @@ if(!$_SESSION['Password']){
                 <label>SISecure</label>
             </div>
             <div class="right">
-                <a href="deconnexion.php"><button class="button-17">Disconnect</button></a>
-                <a href="PasswordProblem.php"><button class="button-17">Change Data</button></a>
-                <a href="landing.php"><button class="button-17">Table Commentaire</button></a>
+                <a href="deconnexion.php"><button class="button-17">Deconnecter</button></a>
+                <a href="PasswordProblem.php"><button class="button-17">Information Personnel</button></a>
+                <a href="landing.php"><button class="button-17">Table utilisateur</button></a>
                 <label class="button-17"><?php echo $_SESSION['Prenom']?></label>
             </div>
         </header>

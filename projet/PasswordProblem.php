@@ -64,10 +64,10 @@ else{
 
     <header>
         <div class="left">
-            <label>ChouetteTransfert</label>
+            <label>SISecure</label>
         </div>
         <div class="right">
-            <a href="deconnexion.php"><button class="button-17">Disconnect</button></a>
+            <a href="deconnexion.php"><button class="button-17">Deconnecter</button></a>
             <a href="landing.php"><button class="button-17">Accueil</button></a>
             <label class="button-17"><?php echo $_SESSION['Prenom']?></label>
         </div>
@@ -83,7 +83,7 @@ else{
                     <input class="form-control" type="password" name="password_confirm" placeholder="Confirmation du mot de passe"/>
                 </div>
                 <br/>
-                <input type="submit" name="PasswordChange" value="Change password" class="btn"></input>
+                <input type="submit" name="PasswordChange" value="Confirmer" class="btn"></input>
             </form>
             <br/><br/>
             <form action="" method="post">
@@ -94,7 +94,7 @@ else{
                     <input class="form-control" type="email" name="email_confirm" placeholder="Confirmation de mail"/>
                 </div>
                 <br/>
-                <input type="submit" name="EmailChange" value="Change Email" class="btn"></input>
+                <input type="submit" name="EmailChange" value="Confirmer" class="btn"></input>
             </form>
         </div>
 
@@ -103,7 +103,7 @@ else{
 </div>
 
 <footer>
-    <p>© 2022 Mastercamp ||| Pour nous contacter : ChouetteTransfert@efrei.net</p>
+    <p>© 2022 SSI ||| Contact : maxime.montavon@efrei.net</p>
 </footer>
 
 

@@ -1,191 +1,374 @@
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <title>Table Style</title>
-    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+    <title>Connexion</title>
+    <meta charset="utf-8">
 </head>
-
 <body>
-<div class="table-title">
-    <h3>Data Table</h3>
+
+<div class="background">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 </div>
-<table class="table-fill">
-    <thead>
-    <tr>
-        <th class="text-left">Month</th>
-        <th class="text-left">Sales</th>
-    </tr>
-    </thead>
-    <tbody class="table-hover">
-    <tr>
-        <td class="text-left">January</td>
-        <td class="text-left">$ 50,000.00</td>
-    </tr>
-    <tr>
-        <td class="text-left">February</td>
-        <td class="text-left">$ 10,000.00</td>
-    </tr>
-    <tr>
-        <td class="text-left">March</td>
-        <td class="text-left">$ 85,000.00</td>
-    </tr>
-    <tr>
-        <td class="text-left">April</td>
-        <td class="text-left">$ 56,000.00</td>
-    </tr>
-    <tr>
-        <td class="text-left">May</td>
-        <td class="text-left">$ 98,000.00</td>
-    </tr>
-    </tbody>
-</table>
-
-
-</body>
-
 <style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
-    body {
-        background-color: #3e94ec;
-        font-family: "Roboto", helvetica, arial, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        text-rendering: optimizeLegibility;
+    /* Fond dynamique made by https://wweb.dev/resources/animated-css-background-generator/ */
+    @keyframes animate {
+        0%{
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+            border-radius: 0;
+        }
+        100%{
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+            border-radius: 50%;
+        }
     }
 
-    div.table-title {
+    .background {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        background: #4e54c8;
+        overflow: hidden;
+    }
+    .background li {
+        position: absolute;
         display: block;
-        margin: auto;
-        max-width: 600px;
-        padding:5px;
-        width: 100%;
-    }
-
-    .table-title h3 {
-        color: #fafafa;
-        font-size: 30px;
-        font-weight: 400;
-        font-style:normal;
-        font-family: "Roboto", helvetica, arial, sans-serif;
-        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-        text-transform:uppercase;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 16s linear infinite;
     }
 
 
-    /*** Table Styles **/
 
-    .table-fill {
-        background: white;
-        border-radius:3px;
-        border-collapse: collapse;
-        height: 320px;
-        margin: auto;
-        max-width: 600px;
-        padding:5px;
-        width: 100%;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        animation: float 5s infinite;
+
+    .background li:nth-child(0) {
+        left: 77%;
+        width: 177px;
+        height: 177px;
+        bottom: -177px;
+        animation-delay: 1s;
     }
-
-    th {
-        color:#D5DDE5;;
-        background:#1b1e24;
-        border-bottom:4px solid #9ea7af;
-        border-right: 1px solid #343a45;
-        font-size:23px;
-        font-weight: 100;
-        padding:24px;
-        text-align:left;
-        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-        vertical-align:middle;
+    .background li:nth-child(1) {
+        left: 3%;
+        width: 156px;
+        height: 156px;
+        bottom: -156px;
+        animation-delay: 4s;
     }
-
-    th:first-child {
-        border-top-left-radius:3px;
+    .background li:nth-child(2) {
+        left: 52%;
+        width: 68px;
+        height: 68px;
+        bottom: -68px;
+        animation-delay: 7s;
     }
-
-    th:last-child {
-        border-top-right-radius:3px;
-        border-right:none;
+    .background li:nth-child(3) {
+        left: 80%;
+        width: 142px;
+        height: 142px;
+        bottom: -142px;
+        animation-delay: 13s;
     }
-
-    tr {
-        border-top: 1px solid #C1C3D1;
-        border-bottom-: 1px solid #C1C3D1;
-        color:#666B85;
-        font-size:16px;
-        font-weight:normal;
-        text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+    .background li:nth-child(4) {
+        left: 28%;
+        width: 81px;
+        height: 81px;
+        bottom: -81px;
+        animation-delay: 6s;
     }
-
-    tr:hover td {
-        background:#4E5066;
-        color:#FFFFFF;
-        border-top: 1px solid #22262e;
+    .background li:nth-child(5) {
+        left: 62%;
+        width: 86px;
+        height: 86px;
+        bottom: -86px;
+        animation-delay: 6s;
     }
-
-    tr:first-child {
-        border-top:none;
+    .background li:nth-child(6) {
+        left: 51%;
+        width: 166px;
+        height: 166px;
+        bottom: -166px;
+        animation-delay: 16s;
     }
-
-    tr:last-child {
-        border-bottom:none;
+    .background li:nth-child(7) {
+        left: 77%;
+        width: 41px;
+        height: 41px;
+        bottom: -41px;
+        animation-delay: 13s;
     }
-
-    tr:nth-child(odd) td {
-        background:#EBEBEB;
+    .background li:nth-child(8) {
+        left: 64%;
+        width: 108px;
+        height: 108px;
+        bottom: -108px;
+        animation-delay: 24s;
     }
-
-    tr:nth-child(odd):hover td {
-        background:#4E5066;
+    .background li:nth-child(9) {
+        left: 16%;
+        width: 48px;
+        height: 48px;
+        bottom: -48px;
+        animation-delay: 22s;
     }
-
-    tr:last-child td:first-child {
-        border-bottom-left-radius:3px;
+    .background li:nth-child(10) {
+        left: 25%;
+        width: 88px;
+        height: 88px;
+        bottom: -88px;
+        animation-delay: 8s;
     }
-
-    tr:last-child td:last-child {
-        border-bottom-right-radius:3px;
+    .background li:nth-child(11) {
+        left: 30%;
+        width: 134px;
+        height: 134px;
+        bottom: -134px;
+        animation-delay: 11s;
     }
-
-    td {
-        background:#FFFFFF;
-        padding:20px;
-        text-align:left;
-        vertical-align:middle;
-        font-weight:300;
-        font-size:18px;
-        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-        border-right: 1px solid #C1C3D1;
+    .background li:nth-child(12) {
+        left: 60%;
+        width: 146px;
+        height: 146px;
+        bottom: -146px;
+        animation-delay: 15s;
     }
-
-    td:last-child {
-        border-right: 0px;
+    .background li:nth-child(13) {
+        left: 6%;
+        width: 150px;
+        height: 150px;
+        bottom: -150px;
+        animation-delay: 58s;
     }
-
-    th.text-left {
-        text-align: left;
+    .background li:nth-child(14) {
+        left: 33%;
+        width: 57px;
+        height: 57px;
+        bottom: -57px;
+        animation-delay: 40s;
     }
-
-    th.text-center {
-        text-align: center;
+    .background li:nth-child(15) {
+        left: 24%;
+        width: 48px;
+        height: 48px;
+        bottom: -48px;
+        animation-delay: 27s;
     }
-
-    th.text-right {
-        text-align: right;
+    .background li:nth-child(16) {
+        left: 45%;
+        width: 100px;
+        height: 100px;
+        bottom: -100px;
+        animation-delay: 13s;
     }
-
-    td.text-left {
-        text-align: left;
+    .background li:nth-child(17) {
+        left: 53%;
+        width: 147px;
+        height: 147px;
+        bottom: -147px;
+        animation-delay: 77s;
     }
-
-    td.text-center {
-        text-align: center;
+    .background li:nth-child(18) {
+        left: 67%;
+        width: 174px;
+        height: 174px;
+        bottom: -174px;
+        animation-delay: 7s;
     }
-
-    td.text-right {
-        text-align: right;
+    .background li:nth-child(19) {
+        left: 19%;
+        width: 79px;
+        height: 79px;
+        bottom: -79px;
+        animation-delay: 27s;
     }
-
+    .background li:nth-child(20) {
+        left: 58%;
+        width: 87px;
+        height: 87px;
+        bottom: -87px;
+        animation-delay: 10s;
+    }
+    .background li:nth-child(21) {
+        left: 1%;
+        width: 163px;
+        height: 163px;
+        bottom: -163px;
+        animation-delay: 49s;
+    }
+    .background li:nth-child(22) {
+        left: 19%;
+        width: 87px;
+        height: 87px;
+        bottom: -87px;
+        animation-delay: 56s;
+    }
+    .background li:nth-child(23) {
+        left: 35%;
+        width: 56px;
+        height: 56px;
+        bottom: -56px;
+        animation-delay: 41s;
+    }
+    .background li:nth-child(24) {
+        left: 53%;
+        width: 163px;
+        height: 163px;
+        bottom: -163px;
+        animation-delay: 31s;
+    }
+    .background li:nth-child(25) {
+        left: 79%;
+        width: 131px;
+        height: 131px;
+        bottom: -131px;
+        animation-delay: 91s;
+    }
+    .background li:nth-child(26) {
+        left: 24%;
+        width: 127px;
+        height: 127px;
+        bottom: -127px;
+        animation-delay: 37s;
+    }
+    .background li:nth-child(27) {
+        left: 51%;
+        width: 166px;
+        height: 166px;
+        bottom: -166px;
+        animation-delay: 132s;
+    }
+    .background li:nth-child(28) {
+        left: 46%;
+        width: 123px;
+        height: 123px;
+        bottom: -123px;
+        animation-delay: 44s;
+    }
+    .background li:nth-child(29) {
+        left: 60%;
+        width: 180px;
+        height: 180px;
+        bottom: -180px;
+        animation-delay: 137s;
+    }
+    .background li:nth-child(30) {
+        left: 30%;
+        width: 135px;
+        height: 135px;
+        bottom: -135px;
+        animation-delay: 68s;
+    }
+    .background li:nth-child(31) {
+        left: 87%;
+        width: 181px;
+        height: 181px;
+        bottom: -181px;
+        animation-delay: 45s;
+    }
+    .background li:nth-child(32) {
+        left: 60%;
+        width: 56px;
+        height: 56px;
+        bottom: -56px;
+        animation-delay: 36s;
+    }
+    .background li:nth-child(33) {
+        left: 38%;
+        width: 47px;
+        height: 47px;
+        bottom: -47px;
+        animation-delay: 132s;
+    }
+    .background li:nth-child(34) {
+        left: 34%;
+        width: 117px;
+        height: 117px;
+        bottom: -117px;
+        animation-delay: 20s;
+    }
+    .background li:nth-child(35) {
+        left: 65%;
+        width: 169px;
+        height: 169px;
+        bottom: -169px;
+        animation-delay: 159s;
+    }
+    .background li:nth-child(36) {
+        left: 58%;
+        width: 127px;
+        height: 127px;
+        bottom: -127px;
+        animation-delay: 53s;
+    }
+    .background li:nth-child(37) {
+        left: 44%;
+        width: 120px;
+        height: 120px;
+        bottom: -120px;
+        animation-delay: 12s;
+    }
+    .background li:nth-child(38) {
+        left: 49%;
+        width: 92px;
+        height: 92px;
+        bottom: -92px;
+        animation-delay: 46s;
+    }
+    .background li:nth-child(39) {
+        left: 80%;
+        width: 41px;
+        height: 41px;
+        bottom: -41px;
+        animation-delay: 9s;
+    }
+    .background li:nth-child(40) {
+        left: 28%;
+        width: 154px;
+        height: 154px;
+        bottom: -154px;
+        animation-delay: 61s;
+    }
+    .background li:nth-child(41) {
+        left: 61%;
+        width: 62px;
+        height: 62px;
+        bottom: -62px;
+        animation-delay: 154s;
+    }
+    .background li:nth-child(42) {
+        left: 48%;
+        width: 59px;
+        height: 59px;
+        bottom: -59px;
+        animation-delay: 48s;
+    }
+    .background li:nth-child(43) {
+        left: 36%;
+        width: 97px;
+        height: 97px;
+        bottom: -97px;
+        animation-delay: 17s;
+    }
 </style>
+</body>
+</html>

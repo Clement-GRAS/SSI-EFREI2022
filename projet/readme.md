@@ -2,7 +2,7 @@
 
 -------------------------------------------------------------------
 ## Description du projet
-Projet pour la matière SSI
+1. Projet pour la matière SSI
 ---
 ## Comment acceder au site
 1. Installer __Xampp__ (*Window*) ou __Mamp__ (*Mac*)
